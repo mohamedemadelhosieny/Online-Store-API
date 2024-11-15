@@ -1,0 +1,718 @@
+{
+	"info": {
+		"_postman_id": "57346fdc-b03b-4724-abd2-8e7f288d146d",
+		"name": "Online Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27668196"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "GetAllProducts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllBrands",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzMwNDQ3MDU1LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.0dp0xW0F7AC1a7DJxV7a9IGggaCtm2ripj1saw3SZaE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products/Brands",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products",
+								"Brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllTypes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzI5OTMzNzE0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.MwXC6NoyTfmFUP07hZzjsThTRpjYlErXlifQkfjLAUg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products/Types",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products",
+								"Types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzI5OTMzNzE0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.MwXC6NoyTfmFUP07hZzjsThTRpjYlErXlifQkfjLAUg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products/10",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Filteration",
+			"item": [
+				{
+					"name": "Get Products by Brand Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products?pageSize=5&pageIndex=2",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "5"
+								},
+								{
+									"key": "pageIndex",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products by Type Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products?typeid=2",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products"
+							],
+							"query": [
+								{
+									"key": "typeid",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products by Type Id and Brand Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products?brandid=2&typeid=2",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products"
+							],
+							"query": [
+								{
+									"key": "brandid",
+									"value": "2"
+								},
+								{
+									"key": "typeid",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products and sort by price asc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products?sort=PriceAsc",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "PriceAsc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products and sort by price desc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Products?sort=PriceDesc",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Products"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "PriceDesc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Errors Handling",
+			"item": [
+				{
+					"name": "Get Not Found Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/buggy/notfound",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"buggy",
+								"notfound"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Server Error Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/buggy/servererror",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"buggy",
+								"servererror"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bad Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/buggy/badrequest",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"buggy",
+								"badrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bad Request Validation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/buggy/badrequest/ahmed",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"buggy",
+								"badrequest",
+								"ahmed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get unauthorized Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/buggy/",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"buggy",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Not Found Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/hfgfg",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"hfgfg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basket",
+			"item": [
+				{
+					"name": "Update Get Basket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"basket1\",\r\n\"items\": [\r\n    {\r\n        \"id\": 4,\r\n\"productName\": \".NET Black & White Mug\",\r\n\"price\": 10,\r\n\"quantity\": 32,\r\n\"pictureUrl\": \"https://localhost:5001/images/products/2.png\",\r\n\"brand\": \".NET\",\r\n\"type\": \"USB Memory Stick\"\r\n    }\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}api/basket",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"basket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/basket/basket1",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"basket",
+								"basket1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Basket?id=basket1",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Basket"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "basket1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePaymentIntentId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzMxNTc2MjM0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.9RftWOCiXtb2mdksPyYlziBr8I47OvXbNXU8SoZYEAg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Payments/basket3",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Payments",
+								"basket3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Identity",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"me38310@gmail.com\",\r\n    \"password\":\"Meme+552001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}api/Accounts/login",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Accounts",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"omda123@gmail.com\",\r\n    \"DisplayName\":\"Omda\",\r\n    \"PhoneNumber\":\"010101010\",\r\n    \"Password\":\"Meme+552001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}api/Accounts/register",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Accounts",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCurrentUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzI5OTMzNzE0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.MwXC6NoyTfmFUP07hZzjsThTRpjYlErXlifQkfjLAUg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Accounts/GetCurrentUser",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Accounts",
+								"GetCurrentUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCurrentUserAddress",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzMwMjczNjE0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.W_MQ56oO6Ca07XOgvyJNO8I_BcuPf1WA6WtdqD7qJEI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Accounts/Address",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Accounts",
+								"Address"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Module",
+			"item": [
+				{
+					"name": "CreateOrder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzMxNTc2MjM0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.9RftWOCiXtb2mdksPyYlziBr8I47OvXbNXU8SoZYEAg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"basketId\": \"basket1\",\r\n    \"deliveryMethodId\": 1,\r\n    \"shipToAddress\": {\r\n        \"FirstName\":\"ahmed\",\r\n        \"LastName\": \"ali\",\r\n        \"street\": \"NasrCity\",\r\n        \"city\": \"cairo\",\r\n        \"country\": \"Egypt\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}api/Orders",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOrderForSpecificUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzMxNDAxNjAyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.vqAv1cDRhDHcVsrDoKAqmTlFQMp-IZrrHsK3ob3HvRg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Orders",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOrderById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZTM4MzEwQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6Im9tZGEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjAxMDY4NTQ4NjA3IiwiZXhwIjoxNzMxNDAxNjAyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTY2LyIsImF1ZCI6Ik15U3RvcmVBcHAifQ.vqAv1cDRhDHcVsrDoKAqmTlFQMp-IZrrHsK3ob3HvRg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Orders/19",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Orders",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetDeliveryMethods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}api/Orders/DeliveryMethods",
+							"host": [
+								"{{BaseUrl}}api"
+							],
+							"path": [
+								"Orders",
+								"DeliveryMethods"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "https://localhost:7166/",
+			"type": "string"
+		}
+	]
+}
