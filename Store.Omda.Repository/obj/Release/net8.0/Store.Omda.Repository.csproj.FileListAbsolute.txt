@@ -1,0 +1,15 @@
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\bin\Release\net8.0\Store.Omda.Repository.deps.json
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\bin\Release\net8.0\Store.Omda.Repository.dll
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\bin\Release\net8.0\Store.Omda.Repository.pdb
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\bin\Release\net8.0\Store.Omda.Core.dll
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\bin\Release\net8.0\Store.Omda.Core.pdb
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Omda.Repository.csproj.AssemblyReference.cache
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Omda.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Omda.Repository.AssemblyInfoInputs.cache
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Omda.Repository.AssemblyInfo.cs
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Omda.Repository.csproj.CoreCompileInputs.cache
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Om.7DA1368B.Up2Date
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Omda.Repository.dll
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\refint\Store.Omda.Repository.dll
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\Store.Omda.Repository.pdb
+C:\Users\NV_USER\source\repos\Store.Omda\Store.Omda.Repository\obj\Release\net8.0\ref\Store.Omda.Repository.dll
